@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+{% comment %} <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+  </style>
+</head> {% endcomment %}
+
+
+<head>
+  <title>Health - Medical Website Template</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Tooplate">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="{% static "/css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "/css/font-awesome.min.css" %}">
+  <link rel="stylesheet" href="{% static "/css/animate.css" %}">
+  <link rel="stylesheet" href="{% static "/css/owl.carousel.css" %}">
+  <link rel="stylesheet" href="{% static "/css/owl.theme.default.min.css" %}">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="{% static "/css/tooplate-style.css" %}">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+  <!-- PRE LOADER -->
+  {% comment %} <section class="preloader">
+     <link rel="stylesheet" href="{% static "/css/svg.css" %}">
+       <div class="">
+
+
+
+
+
+
+
+
+
+            <span class="spinner-rotate"><div class="center">
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+             <div class="wave"></div>
+           </div>
+           </span>
+            
+
+
+
+
+
+
+
+
+
+
+       </div>
+  </section> {% endcomment %}
+
+
+  <!-- HEADER -->
+  {% comment %} <header>
+       <div class="container">
+            <div class="row">
+
+                 <div class="col-md-4 col-sm-5">
+                      <p>Welcome to a Professional Health Care</p>
+                 </div>
+                      
+                 <div class="col-md-8 col-sm-7 text-align-right">
+                      <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
+                      <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
+                      <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></span>
+                 </div>
+
+            </div>
+       </div>
+  </header> {% endcomment %}
+
+
+  <!-- MENU -->
+
+  <section class="navbar navbar-default navbar-static-top" role="navigation">
+       <div class="container">
+
+            <div class="navbar-header">
+                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="icon icon-bar"></span>
+                      <span class="icon icon-bar"></span>
+                      <span class="icon icon-bar"></span>
+                 </button>
+
+                 <!-- lOGO TEXT HERE -->
+                 <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                 <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/adminclick" class="smoothScroll">Admin</a></li>
+                      <li><a href="/doctorclick" class="smoothScroll">Patient</a></li>
+                      <li><a href="/patientclick" class="smoothScroll">Doctors</a></li>
+                      <li><a href="#news" class="smoothScroll">News</a></li>
+                      <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                      <li class="appointment-btn"><a href="/patientclick">Make an appointment</a></li>
+                 </ul>
+            </div>
+
+       </div>
+  </section>
+
+{% comment %} <body>
+
+
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:#337AB7;">
+      <a href="/" class="navbar-brand">Hospital Management</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+
+          <a href="/adminclick" class="nav-item nav-link">Admin</a>
+          <a href="/doctorclick" class="nav-item nav-link">Doctor</a>
+          <a href="/patientclick" class="nav-item nav-link">Patient</a>
+
+
+        </div>
+
+        <div class="navbar-nav">
+          <a href="/aboutus" class="nav-item nav-link">About Us</a>
+          <a href="/contactus" class="nav-item nav-link">Contact Us</a>
+        </div>
+
+      </div>
+    </nav>
+  </div>{% endcomment %}
+
+
+</body> 
+
+</html>
