@@ -9,7 +9,6 @@ How to run
 
 1. git clone
 2. pip install -r requirement.txt
-
 3.cd MentalHealth
 4. python manage.py makemigrations
 5. python manage.py migrate
