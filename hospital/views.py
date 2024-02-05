@@ -10,6 +10,7 @@ from django.conf import settings
 from django.db.models import Q
 
 # Create your views here.
+
 def home_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
@@ -37,7 +38,22 @@ def patientclick_view(request):
     return render(request,'hospital/patientclick.html')
 
 def news(request):
-    return render(request,'news-detail.html')
+    return render(request,'hospital/news_detail.html')
+
+def news1(request):
+    return render(request,'hospital/news_detail1.html')
+
+def news2(request):
+    return render(request,'hospital/news_detail2.html')
+
+def news3(request):
+    return render(request,'hospital/news_detail3.html')
+
+def news4(request):
+    return render(request,'hospital/news_detail4.html')
+
+def news5(request):
+    return render(request,'hospital/news_detail5.html')
 
 
 
