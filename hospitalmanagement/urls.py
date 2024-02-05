@@ -1,11 +1,4 @@
-"""
 
-Developed By : sumit kumar
-facebook : fb.com/sumit.luv
-Youtube :youtube.com/lazycoders
-
-
-"""
 
 
 
@@ -75,7 +68,13 @@ urlpatterns = [
     path('admin-approve-appointment', views.admin_approve_appointment_view,name='admin-approve-appointment'),
     path('approve-appointment/<int:pk>', views.approve_appointment_view,name='approve-appointment'),
     path('reject-appointment/<int:pk>', views.reject_appointment_view,name='reject-appointment'),
-    path("news_detail",views.news,name='news'),
+    path("news_details",views.news,name='news'),
+    path("news_details1",views.news1,name='news1'),
+    path("news_details2",views.news2,name='news2'),
+    path("news_details3",views.news3,name='news3'),
+    path("news_details4",views.news4,name='news4'),
+    path("news_details5",views.news5,name='news5'),
+    
     
 ]
 
@@ -111,6 +110,3 @@ urlpatterns +=[
 
 ]
 
-#Developed By : sumit kumar
-#facebook : fb.com/sumit.luv
-#Youtube :youtube.com/lazycoders

@@ -1,24 +1,22 @@
 {% extends 'hospital/homebase.html' %}
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
+
 
 {% block content %}
-
+{% load static %}
 <br>
 <br>
-
-<div class="jumbotron" style="margin-bottom:0px;">
-  <h1 class="display-4" style="text-align:center;">Hello, Doctor</h1>
-  <p class="lead">Welcome to Hospital Management System.</p>
+<link rel="stylesheet" href="{% static "/css/adminclick.css"%}">
+{% comment %} <div class="jumbotron" style="margin-bottom:0px;"> {% endcomment %}
+  <center>
+  <img src = "{% static "images/Admin icons.png" %} " style="width:120px;"></center>
+  <h1 class="display-4" style="text-align:center;">DOCTOR LOGIN</h1>
+  <p class="lead"><a href="" class="btn-shine" target="_blank">Welcome to MHCS</a></p>
   <hr class="my-4">
   <p>You can access various features after Login/SignUp.</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/doctorsignup" role="button">Apply</a>
-    <a class="btn btn-primary btn-lg" href="/doctorlogin" role="button">Login</a>
+    {% comment %} <a class="btn btn-primary btn-lg" href="/adminsignup" role="button">SignUp</a> {% endcomment %}
+    {% comment %} <a class="btn btn-primary btn-lg" href="/patientsignup" role="button"><button class='glowing-btn'><span class='glowing-txt'>BOO<span class='faulty-letter'>K</span>IGIN</span></button></a> {% endcomment %}
+    <a class="btn btn-primary btn-lg" href="/doctorlogin" role="button"><button class='glowing-btn'><span class='glowing-txt'>L<span class='faulty-letter'>O</span>GIN</span></button></a>
   </p>
-</div>
 
 {% endblock content %}

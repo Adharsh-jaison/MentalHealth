@@ -1,53 +1,16 @@
 <!DOCTYPE html>
 {% load widget_tweaks %}
 <html lang="en" dir="ltr">
+{% load static %}
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>LazyCoder || sumit</title>
+  <title>MHCS </title>
+  <link rel="stylesheet" href="{% static "/css/adminloginpage.css" %}">
+  <link rel="stylesheet" href="{% static "/css/adminlogintxt.css"%}">
 
-
-  <style type="text/css">
-    body {
-      color: #aa082e;
-      background-color: #b6bde7;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    a:link {
-      text-decoration: none;
-    }
-
-    .note {
-      text-align: center;
-      height: 80px;
-      background: -webkit-linear-gradient(left, #0072ff, #8811c5);
-      color: #fff;
-      font-weight: bold;
-      line-height: 80px;
-    }
-
-    .form-content {
-      padding: 5%;
-      border: 1px solid #ced4da;
-      margin-bottom: 2%;
-    }
-
-    .form-control {
-      border-radius: 1.5rem;
-    }
-
-    .btnSubmit {
-      border: none;
-      border-radius: 1.5rem;
-      padding: 1%;
-      width: 20%;
-      cursor: pointer;
-      background: #0062cc;
-      color: #fff;
-    }
-  </style>
+  
 
 </head>
 
@@ -57,13 +20,13 @@
   <br>
   <br><br>
 
-  <!--- login page for patient by admin(sumit)  ---------->
+  <!--- login page for patient by admin  ---------->
   <form method="post">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Patient Login Page</p>
+          <p><a href="" class="btn-shine" target="_blank"></a></p>
         </div>
 
         <div class="form-content">
@@ -83,7 +46,7 @@
 
             </div>
           </div>
-          <button type="submit" class="btnSubmit">Login</button>
+          <button type="submit" class="btnSubmit"><a href="" class="btn-shine" target="_blank">Login</a></button>
           <div class="text-center">Do not have account? <a href="patientsignup">Signup here</a></div>
         </div>
       </div>
@@ -92,11 +55,6 @@
   </form>
 
   <br><br><br>
-  <!--
-  developed By : sumit kumar
-  facebook : fb.com/sumit.luv
-  youtube : youtube.com/lazycoders
-  -->
 
   {% include "hospital/footer.html" %}
 </body>

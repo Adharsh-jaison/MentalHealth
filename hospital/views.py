@@ -10,34 +10,50 @@ from django.conf import settings
 from django.db.models import Q
 
 # Create your views here.
+
 def home_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
     return render(request,'hospital/index.html')
 
 
-#for showing signup/login button for admin(by sumit)
+#for showing signup/login button for admin
 def adminclick_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
     return render(request,'hospital/adminclick.html')
 
 
-#for showing signup/login button for doctor(by sumit)
+#for showing signup/login button for doctor
 def doctorclick_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
     return render(request,'hospital/doctorclick.html')
 
 
-#for showing signup/login button for patient(by sumit)
+#for showing signup/login button for patient
 def patientclick_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
     return render(request,'hospital/patientclick.html')
 
 def news(request):
-    return render(request,'news-detail.html')
+    return render(request,'hospital/news_detail.html')
+
+def news1(request):
+    return render(request,'hospital/news_detail1.html')
+
+def news2(request):
+    return render(request,'hospital/news_detail2.html')
+
+def news3(request):
+    return render(request,'hospital/news_detail3.html')
+
+def news4(request):
+    return render(request,'hospital/news_detail4.html')
+
+def news5(request):
+    return render(request,'hospital/news_detail5.html')
 
 
 
@@ -103,7 +119,7 @@ def patient_signup_view(request):
 
 
 
-#-----------for checking user is doctor , patient or admin(by sumit)
+#-----------for checking user is doctor , patient or admin
 def is_admin(user):
     return user.groups.filter(name='ADMIN').exists()
 def is_doctor(user):
@@ -846,6 +862,3 @@ def contactus_view(request):
 
 
 
-#Developed By : sumit kumar
-#facebook : fb.com/sumit.luv
-#Youtube :youtube.com/lazycoders
